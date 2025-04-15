@@ -671,7 +671,58 @@ input[type="submit"] {
     margin: 0 auto;
     background: rgba(255, 255, 255, 0.95);
     padding: 40px;
-    border-radius: 10px;
+    border-radius: 0;
+    border-top-right-radius: 10px;
+    color: var(--color-text);
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form input[type="tel"],
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    font-family: var(--font-primary);
+    font-size: 14px;
+}
+
+.contact-form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.contact-form input[type="submit"] {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 202px;
+    height: 50px;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    text-decoration: none;
+    border-radius: 0;
+    border: none;
+    border-top-right-radius: 10px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #1d3c3f;
+}
+
+.contact-form label {
+    font-family: var(--font-primary);
+    font-weight: 500;
+    color: var(--color-text);
+    margin-bottom: 8px;
+    display: block;
 }
 
 /*------------------------------------*\
@@ -1183,6 +1234,11 @@ input[type="submit"] {
     .google-logo {
         width: 30px;
     }
+
+    .review-rating {
+        font-size: 25px;
+        letter-spacing: 0.15em;
+    }
 }
 
 /* Small mobile devices */
@@ -1296,6 +1352,12 @@ input[type="submit"] {
     
     .review-rating {
         font-size: 22px;
+        letter-spacing: 0.15em;
+    }
+
+    .contact-form input[type="submit"] {
+        width: 160px;
+        font-size: 0.9rem;
     }
 }
 
@@ -1347,7 +1409,8 @@ input[type="submit"] {
     }
     
     .review-rating {
-        font-size: 16px;
+        font-size: 20px;
+        letter-spacing: 0.15em;
     }
     
     .hero-text h1 {
@@ -1383,6 +1446,12 @@ input[type="submit"] {
     
     .review-rating {
         font-size: 20px;
+        letter-spacing: 0.15em;
+    }
+
+    .contact-form input[type="submit"] {
+        width: 150px;
+        font-size: 0.9rem;
     }
 }
 
@@ -1498,6 +1567,11 @@ input[type="submit"] {
     font-size: 30px;
     text-align: center;
     margin-top: 4px;
+    letter-spacing: 0.15em;
+}
+
+.reviewer-name::before {
+    content: "- ";
 }
 
 /* Entferne alle Zeitangaben */
@@ -1520,6 +1594,11 @@ input[type="submit"] {
 
     .google-reviews-container {
         padding: 0 20px;
+    }
+
+    .review-rating {
+        font-size: 25px;
+        letter-spacing: 0.15em;
     }
 }
 
@@ -1666,6 +1745,21 @@ input[type="submit"] {
         right: 100px;
         left: auto;
     }
+
+    .review-rating {
+        font-size: 25px;
+        letter-spacing: 0.15em;
+    }
+
+    .contact-form {
+        padding: 25px 20px;
+    }
+    
+    .contact-form input[type="submit"] {
+        width: 180px;
+        height: 45px;
+        font-size: 1rem;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1778,5 +1872,105 @@ input[type="submit"] {
     
     .review-rating {
         font-size: 22px;
+        letter-spacing: 0.15em;
+    }
+
+    .contact-form input[type="submit"] {
+        width: 160px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 360px) {
+    .site-header {
+        height: 60px;
+    }
+    
+    #masthead.site-header {
+        height: 60px;
+    }
+    
+    .site-header .container {
+        height: 60px;
+    }
+    
+    .site-branding {
+        height: 60px;
+    }
+    
+    .custom-logo-link {
+        width: 160px;
+        height: 86px;
+        top: 0;
+        left: 0;
+    }
+    
+    .menu-toggle {
+        right: 80px;
+        margin-left: 0;
+    }
+    
+    #primary {
+        padding-top: 0;
+    }
+    
+    .hero-section {
+        margin-top: 0;
+        padding-top: 0;
+    }
+    
+    .google-logo {
+        width: 22px;
+    }
+    
+    .reviewer-image {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .review-rating {
+        font-size: 20px;
+        letter-spacing: 0.15em;
+    }
+    
+    .hero-text h1 {
+        font-size: clamp(28px, 6vw, 32px);
+    }
+    
+    .cta-button {
+        width: 150px;
+        font-size: 0.9rem;
+    }
+
+    .footer-logo {
+        width: 90px;
+        height: 88px;
+    }
+    
+    .footer-content {
+        padding: 0 15px;
+        gap: 20px;
+    }
+    
+    .footer-legal ul {
+        gap: 10px;
+    }
+
+    .painter-image {
+        padding-left: 10px;
+    }
+    
+    .painter-image img {
+        margin-left: 10px;
+    }
+    
+    .review-rating {
+        font-size: 20px;
+        letter-spacing: 0.15em;
+    }
+
+    .contact-form input[type="submit"] {
+        width: 150px;
+        font-size: 0.9rem;
     }
 } 
