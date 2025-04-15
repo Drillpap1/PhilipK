@@ -201,13 +201,14 @@ input[type="submit"] {
 
 /* Footer */
 .site-footer {
-    height: auto;
+    height: var(--footer-height);
     width: 100%;
     background-color: var(--color-footer-bg);
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 40px 0;
+    padding: 40px 0 60px;
+    margin-bottom: 0;
 }
 
 .footer-content {
@@ -1107,7 +1108,8 @@ input[type="submit"] {
     /* Footer adjustments */
     .site-footer {
         height: auto;
-        padding: 40px 0 0 0;
+        padding: 40px 0 40px;
+        margin-bottom: 0;
     }
     
     .footer-content {
@@ -1174,6 +1176,10 @@ input[type="submit"] {
     .service-header {
         gap: 16px;
     }
+
+    .google-logo {
+        width: 30px;
+    }
 }
 
 /* Small mobile devices */
@@ -1220,12 +1226,12 @@ input[type="submit"] {
     }
     
     .reviewer-image {
-        width: 40px;
-        height: 40px;
+        width: 50px;
+        height: 50px;
     }
     
     .google-logo {
-        width: 60px;
+        width: 25px;
     }
     
     .review-content {
@@ -1317,12 +1323,12 @@ input[type="submit"] {
     }
     
     .google-logo {
-        width: 45px;
+        width: 22px;
     }
     
     .reviewer-image {
-        width: 35px;
-        height: 35px;
+        width: 40px;
+        height: 40px;
     }
     
     .review-rating {
@@ -1435,10 +1441,11 @@ input[type="submit"] {
     height: 60px;
     border-radius: 50%;
     object-fit: cover;
+    object-position: center;
 }
 
 .google-logo {
-    width: 80px;
+    width: 40px;
     height: auto;
 }
 
@@ -1676,12 +1683,12 @@ input[type="submit"] {
     }
     
     .reviewer-image {
-        width: 40px;
-        height: 40px;
+        width: 50px;
+        height: 50px;
     }
     
     .google-logo {
-        width: 60px;
+        width: 25px;
     }
     
     .review-content {

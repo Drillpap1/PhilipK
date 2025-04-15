@@ -106,7 +106,7 @@ get_header();
                 <div class="review-card">
                     <div class="review-header">
                         <div class="reviewer-info">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/profilbild1.jpg" alt="Familie Berger" class="reviewer-image">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Appartment.png" alt="Familie Berger" class="reviewer-image">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/google_logo.png" alt="Google Logo" class="google-logo">
                         </div>
                     </div>
@@ -121,7 +121,7 @@ get_header();
                 <div class="review-card">
                     <div class="review-header">
                         <div class="reviewer-info">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/profilbild2.jpg" alt="Inhaber Werbeagentur Lumen GmbH" class="reviewer-image">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Appartment.png" alt="Inhaber Werbeagentur Lumen GmbH" class="reviewer-image">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/google_logo.png" alt="Google Logo" class="google-logo">
                         </div>
                     </div>
@@ -136,7 +136,7 @@ get_header();
                 <div class="review-card">
                     <div class="review-header">
                         <div class="reviewer-info">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/profilbild3.jpg" alt="Sabine K." class="reviewer-image">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Appartment.png" alt="Sabine K." class="reviewer-image">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/google_logo.png" alt="Google Logo" class="google-logo">
                         </div>
                     </div>
@@ -151,7 +151,7 @@ get_header();
                 <div class="review-card">
                     <div class="review-header">
                         <div class="reviewer-info">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/profilbild4.jpg" alt="Tamina R." class="reviewer-image">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Appartment.png" alt="Tamina R." class="reviewer-image">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/google_logo.png" alt="Google Logo" class="google-logo">
                         </div>
                     </div>
