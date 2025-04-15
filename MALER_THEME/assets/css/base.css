@@ -1,27 +1,49 @@
 /**
  * Base Styles
  * Variablen, Reset, Typographie und allgemeine Stile
+ * 
+ * Folgt modernen CSS-Standards mit:
+ * - Logischer Strukturierung
+ * - CSS-Variablen (Custom Properties)
+ * - Modern Normalize statt vollständiger Reset
+ * - Responsive Units
  */
 
 /*------------------------------------*\
   #IMPORTS
 \*------------------------------------*/
+/* Font-Import mit Performance-Optimierung
+ * Für bessere Performance sollten diese Preconnect-Links im <head> eingefügt werden:
+ * <link rel="preconnect" href="https://fonts.googleapis.com">
+ * <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 /*------------------------------------*\
   #VARIABLEN
 \*------------------------------------*/
 :root {
-    /* Colors */
+    /* Brand Colors - Primär- und Sekundärfarben */
     --color-primary: #2A5154;
     --color-primary-dark: #1d3c3f;
+    --color-service-yellow: #EFAF01;
+    
+    /* UI Colors - Funktionale Farben */
     --color-hero-bg: #ADA191;
     --color-footer-bg: #D9D9D9;
     --color-text: #333333;
     --color-white: #ffffff;
-    --color-service-yellow: #EFAF01;
     
-    /* Dimensions */
+    /* Abwandlungen mit Transparenz für layering */
+    --color-primary-90: rgba(42, 81, 84, 0.9);
+    --color-white-80: rgba(255, 255, 255, 0.8);
+    
+    /* Farbsemantik */
+    --color-body-bg: var(--color-white);
+    --color-text-main: var(--color-text);
+    --color-text-light: var(--color-white);
+    
+    /* Dimensions - Einheitliche Größen */
     --header-height: 80px;
     --section-width: 1440px;
     --hero-height: 800px;
@@ -31,48 +53,95 @@
     --footer-height: 240px;
     --painter-section-height: 800px;
 
-    /* Typography */
-    --font-primary: 'Inter', sans-serif;
+    /* Typography - Konsistentes Type-System */
+    --font-primary: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-size-base: 1rem;         /* 16px */
+    --font-size-sm: 0.875rem;       /* 14px */
+    --font-size-lg: 1.125rem;       /* 18px */
+    --font-size-xl: 1.25rem;        /* 20px */
+    --font-size-2xl: 1.5rem;        /* 24px */
+    --font-size-3xl: 2rem;          /* 32px */
+    --font-size-4xl: 2.5rem;        /* 40px */
+    --font-size-5xl: 3rem;          /* 48px */
     
-    /* Spacing */
-    --spacing-xs: 10px;
-    --spacing-sm: 20px;
-    --spacing-md: 40px;
-    --spacing-lg: 60px;
+    /* Line Heights - Leserlichkeit */
+    --line-height-tight: 1.2;
+    --line-height-normal: 1.6;
+    --line-height-loose: 1.8;
+    
+    /* Spacing - Konsistentes Spacing-System */
+    --spacing-xs: 0.625rem;         /* 10px */
+    --spacing-sm: 1.25rem;          /* 20px */
+    --spacing-md: 2.5rem;           /* 40px */
+    --spacing-lg: 3.75rem;          /* 60px */
+    
+    /* Border Radius */
+    --border-radius-sm: 0.3125rem;  /* 5px */
+    --border-radius-md: 0.625rem;   /* 10px */
+    
+    /* Shadows */
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.2);
+    
+    /* Transitions */
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
 }
 
 /*------------------------------------*\
-  #RESET & BASIS
+  #MODERN NORMALIZE
 \*------------------------------------*/
-* {
-    margin: 0;
-    padding: 0;
+/* Modernisierter Reset basierend auf normalize.css */
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
     box-sizing: border-box;
 }
 
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: var(--line-height-normal);
+}
+
+img, picture, video, canvas {
+    max-width: 100%;
+    display: block;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+/* Beseitigung von Browser-Inkonsistenzen */
 html, body {
     overflow-x: hidden;
     width: 100%;
     position: relative;
 }
 
+/*------------------------------------*\
+  #TYPOGRAPHY
+\*------------------------------------*/
 body {
     font-family: var(--font-primary);
     font-weight: 400;
-    line-height: 1.6;
-    color: var(--color-text);
+    color: var(--color-text-main);
+    font-size: var(--font-size-base);
 }
 
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-/* Typografie Basis */
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-primary);
     font-weight: 700;
+    line-height: var(--line-height-tight);
+    margin-bottom: 0.5em;
 }
 
 p, span, li, a, input, textarea, button {
@@ -83,6 +152,11 @@ p, span, li, a, input, textarea, button {
 a {
     text-decoration: none;
     color: inherit;
+    transition: var(--transition-fast);
+}
+
+a:hover {
+    opacity: 0.9;
 }
 
 /*------------------------------------*\
@@ -92,7 +166,7 @@ a {
     width: 100%;
     max-width: var(--section-width);
     margin: 0 auto;
-    padding: 0;
+    padding: 0 var(--spacing-sm);
 }
 
 .section-full-width {
@@ -109,6 +183,48 @@ a {
 /*------------------------------------*\
   #UTILITY CLASSES
 \*------------------------------------*/
+/* Visibility */
 .mobile-only {
     display: none;
-} 
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Flexbox utilities */
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+/* Spacing utilities */
+.mt-1 { margin-top: var(--spacing-xs); }
+.mt-2 { margin-top: var(--spacing-sm); }
+.mt-3 { margin-top: var(--spacing-md); }
+.mb-1 { margin-bottom: var(--spacing-xs); }
+.mb-2 { margin-bottom: var(--spacing-sm); }
+.mb-3 { margin-bottom: var(--spacing-md); } 
