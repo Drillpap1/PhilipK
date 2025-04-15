@@ -51,12 +51,19 @@
         height: auto;
         min-height: 600px;
         flex-direction: column;
+        background-image: url('../images/hero_bg_right.png');
+        background-size: cover;
+        background-position: center;
+        position: relative;
     }
     
     .hero-content {
         width: 100%;
         height: auto;
         min-height: 400px;
+        background-color: rgba(173, 161, 145, 0.85);
+        z-index: 2;
+        align-items: center;
     }
     
     .hero-text {
@@ -77,6 +84,24 @@
         position: relative;
         width: 100%;
         height: 300px;
+        background: none;
+    }
+    
+    .hero-apartment-image {
+        display: none;
+    }
+    
+    .termin-button {
+        width: 170px;
+        height: 110px;
+        font-size: 1.1rem;
+        position: relative;
+        margin: 0 auto;
+        z-index: 3;
+        bottom: 0;
+        left: 0;
+        transform: translateY(-50%);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
     
     /* About Section */
@@ -148,25 +173,40 @@
         margin: 0 auto 30px;
     }
     
-    /* Google Reviews */
+    /* Google Reviews Section */
+    .google-reviews-section {
+        padding: 50px 0;
+    }
+    
     .google-reviews-container {
         flex-direction: column;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    
+    .google-reviews-header {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    
+    .google-reviews-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
     }
     
     .review-card {
-        width: 90%;
-        margin-bottom: 20px;
+        width: 45%;
+        margin: 0 0 20px;
+        padding: 20px;
+        min-height: 200px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
     
     /* Buttons */
     .cta-button {
         width: 200px;
-        font-size: 1.1rem;
-    }
-    
-    .termin-button {
-        width: 170px;
-        height: 110px;
         font-size: 1.1rem;
     }
     
@@ -221,10 +261,12 @@
     /* Hero Section */
     .hero-section {
         min-height: 500px;
+        background-position: center center;
     }
     
     .hero-content {
         min-height: 350px;
+        background-color: rgba(173, 161, 145, 0.9);
     }
     
     .hero-text {
@@ -241,6 +283,18 @@
     
     .hero-image {
         height: 200px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .termin-button {
+        width: 150px;
+        height: 100px;
+        font-size: 1rem;
+        padding: 15px;
+        margin: 0 auto;
+        position: relative;
+        transform: translateY(-30%);
     }
     
     /* About Section */
@@ -315,18 +369,34 @@
         margin-bottom: 15px;
     }
     
+    /* Google Reviews Section */
+    .google-reviews-section {
+        padding: 40px 0;
+    }
+    
+    .google-reviews-header h2 {
+        font-size: 2rem;
+    }
+    
+    .review-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .reviewer-info {
+        align-items: center;
+    }
+    
+    .reviewer-image, .google-logo {
+        width: 30px;
+        height: 30px;
+    }
+    
     /* Buttons */
     .cta-button {
         width: 180px;
         font-size: 1rem;
         padding: 12px 20px;
-    }
-    
-    .termin-button {
-        width: 150px;
-        height: 100px;
-        font-size: 1rem;
-        padding: 15px;
     }
     
     .contact-form input[type="submit"] {
@@ -388,10 +458,12 @@
     /* Hero Section */
     .hero-section {
         min-height: 400px;
+        background-position: center bottom;
     }
     
     .hero-content {
         min-height: 300px;
+        background-color: rgba(173, 161, 145, 0.95);
     }
     
     .hero-text {
@@ -410,6 +482,14 @@
     
     .hero-image {
         height: 150px;
+    }
+    
+    .termin-button {
+        width: 130px;
+        height: 90px;
+        font-size: 0.9rem;
+        padding: 10px;
+        transform: translateY(-20%);
     }
     
     /* About Section */
@@ -486,13 +566,24 @@
         font-size: 0.9rem;
     }
     
-    /* Google Reviews */
+    /* Google Reviews Section */
     .google-reviews-section {
         padding: 30px 0;
     }
     
+    .google-reviews-header h2 {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+    }
+    
     .review-card {
         padding: 15px;
+        min-height: auto;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .review-header {
+        margin-bottom: 10px;
     }
     
     .reviewer-name, .review-rating {
@@ -501,6 +592,12 @@
     
     .review-content {
         font-size: 0.85rem;
+        line-height: 1.4;
+    }
+    
+    .reviewer-image, .google-logo {
+        width: 24px;
+        height: 24px;
     }
     
     /* Buttons */
@@ -508,13 +605,6 @@
         width: 160px;
         font-size: 0.9rem;
         padding: 10px 15px;
-    }
-    
-    .termin-button {
-        width: 130px;
-        height: 90px;
-        font-size: 0.9rem;
-        padding: 10px;
     }
     
     .contact-form input[type="submit"] {
