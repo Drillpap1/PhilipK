@@ -25,16 +25,14 @@ get_header();
 
     <!-- About Section -->
     <section class="about-section">
-        <div class="container">
-            <div class="about-content">
-                <h2>Über mich</h2>
-                <p>Ich bin Philip Krzywinski, Malermeister aus Bornheim, NRW. Mit Leidenschaft für das Handwerk und einem Blick fürs Detail setze ich seit Jahren Projekte um, die durch Qualität, Sauberkeit und Termintreue überzeugen. Ob farbige Akzente im Wohnzimmer, ein frischer Fassadenanstrich oder die Neugestaltung von Büroräumen – ich bringe Farbe in Ihr Projekt.</p>
-                <?php if (has_post_thumbnail()) : ?>
-                    <div class="about-image">
-                        <?php the_post_thumbnail('large'); ?>
-                    </div>
-                <?php endif; ?>
-            </div>
+        <div class="about-content">
+            <h2>Über mich</h2>
+            <p>Ich bin Philip Krzywinski, Malermeister aus Bornheim, NRW. Mit Leidenschaft für das Handwerk und einem Blick fürs Detail setze ich seit Jahren Projekte um, die durch Qualität, Sauberkeit und Termintreue überzeugen. Ob farbige Akzente im Wohnzimmer, ein frischer Fassadenanstrich oder die Neugestaltung von Büroräumen – ich bringe Farbe in Ihr Projekt.</p>
+            <?php if (has_post_thumbnail()) : ?>
+                <div class="about-image">
+                    <?php the_post_thumbnail('large'); ?>
+                </div>
+            <?php endif; ?>
         </div>
     </section>
 
@@ -113,7 +111,7 @@ get_header();
                     <div class="review-content">
                         „Absolut empfehlenswert! Herr Krzywinski hat unser Wohnzimmer nicht nur gestrichen, sondern mit einer tollen Wandgestaltung in Szene gesetzt. Alles verlief sauber, pünktlich und mit viel Liebe zum Detail. So stellt man sich Handwerk heute vor!"
                     </div>
-                    <div class="reviewer-name">- Familie Berger, Bornheim</div>
+                    <div class="reviewer-name"> Familie Berger, Bornheim</div>
                     <div class="review-rating">★★★★★</div>
                 </div>
 
@@ -128,7 +126,7 @@ get_header();
                     <div class="review-content">
                         „Wir haben unsere komplette Bürofläche von Herrn Krzywinski und seinem Team renovieren lassen – von der Farbberatung bis zur Ausführung alles top! Besonders beeindruckt hat uns die schnelle Umsetzung bei gleichbleibend hoher Qualität."
                     </div>
-                    <div class="reviewer-name">- Inhaber Werbeagentur Lumen GmbH</div>
+                    <div class="reviewer-name"> Inhaber Werbeagentur Lumen GmbH</div>
                     <div class="review-rating">★★★★★</div>
                 </div>
 
@@ -143,7 +141,7 @@ get_header();
                     <div class="review-content">
                         „Ich bin begeistert vom Ergebnis! Die Fassade meines Hauses sieht aus wie neu. Herr Krzywinski hat nicht nur sauber gearbeitet, sondern uns auch super beraten, welche Farben am besten zur Umgebung passen."
                     </div>
-                    <div class="reviewer-name">- Sabine K., Wesseling</div>
+                    <div class="reviewer-name"> Sabine K., Wesseling</div>
                     <div class="review-rating">★★★★★</div>
                 </div>
 
@@ -158,7 +156,7 @@ get_header();
                     <div class="review-content">
                         „Sehr freundlich, zuverlässig und extrem professionell. Ich habe Herrn Krzywinski für Lackierarbeiten an Türen und Zargen beauftragt – sieht alles aus wie frisch vom Werk. Preis-Leistung stimmt absolut!"
                     </div>
-                    <div class="reviewer-name">- Tamina R., Brühl</div>
+                    <div class="reviewer-name"> Tamina R., Brühl</div>
                     <div class="review-rating">★★★★★</div>
                 </div>
             </div>

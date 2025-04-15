@@ -145,12 +145,13 @@ input[type="submit"] {
     margin-left: -50vw;
     margin-right: -50vw;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     overflow: hidden;
     background-image: url('assets/images/About_section_bg.png');
     background-size: cover !important;
     background-position: center center !important;
     background-repeat: no-repeat !important;
+    padding-left: 0;
 }
 
 .about-section::before {
@@ -162,23 +163,66 @@ input[type="submit"] {
     bottom: 0;
     width: 100%;
     height: 100%;
-    background-image: url('assets/images/About_section_bg.png');
-    background-size: cover !important;
-    background-position: center center !important;
-    background-repeat: no-repeat !important;
     z-index: -1;
     filter: brightness(0.9);
 }
 
+.about-section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -10px;
+    width: 51%;
+    height: 50%;
+    background-image: url('assets/images/Rectangle 3.png');
+    background-size: cover;
+    background-position: top left;
+    background-repeat: no-repeat;
+    z-index: 0;
+    margin-left: 0;
+}
+
 .about-content {
-    width: 100%;
-    max-width: var(--section-width);
-    margin: 0 auto;
-    padding: 60px 40px;
+    width: 50%;
+    padding: 0;
+    margin-left: 0;
     position: relative;
-    z-index: 1;
-    background: rgba(255, 255, 255, 0.9);
-    border-radius: 10px;
+    z-index: 2;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    padding-top: 0;
+}
+
+.about-content h2 {
+    position: relative;
+    z-index: 3;
+    color: var(--color-white);
+    margin-bottom: 20px;
+    margin-left: 60px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: clamp(20px, 6vw, 80px);
+    line-height: 1.1;
+    width: calc(60% - 80px);
+    max-width: 100%;
+    padding: 50px 0 0 0;
+    white-space: nowrap;
+}
+
+.about-content p {
+    position: relative;
+    z-index: 3;
+    color: var(--color-white);
+    margin-left: 60px;
+    width: calc(60% - 80px);
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0 0 clamp(20px, 5vw, 60px) 0;
 }
 
 /* Painter Section */
@@ -503,7 +547,7 @@ input[type="submit"] {
 }
 
 .service-item {
-    padding: 60px 40px;
+    padding: 60px 60px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -648,13 +692,32 @@ input[type="submit"] {
     margin-right: -50vw;
     display: flex;
     align-items: center;
-    background-image: url('assets/images/contakt_section_bg.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    overflow: hidden;
     margin-top: -2px;
     position: relative;
     z-index: 1;
+}
+
+.contact-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: 
+        url('assets/images/contakt_section_bg.png'),
+        url('assets/images/contakt_section_bg.png'),
+        url('assets/images/contakt_section_bg.png'),
+        url('assets/images/contakt_section_bg.png');
+    background-position: 
+        top left,
+        bottom left,
+        top right,
+        bottom right;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
 }
 
 .contact-content {
@@ -669,11 +732,11 @@ input[type="submit"] {
 .contact-form {
     max-width: 800px;
     margin: 0 auto;
-    background: rgba(255, 255, 255, 0.95);
+    background-color: rgba(255, 255, 255, 0.9);
     padding: 40px;
-    border-radius: 0;
-    border-top-right-radius: 10px;
+    border-radius: 10px;
     color: var(--color-text);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
 }
 
 .contact-form input[type="text"],
@@ -684,7 +747,7 @@ input[type="submit"] {
     padding: 12px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
-    border-radius: 0;
+    border-radius: 10px;
     font-family: var(--font-primary);
     font-size: 14px;
 }
@@ -698,14 +761,13 @@ input[type="submit"] {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 202px;
+    width: 100%;
     height: 50px;
     background-color: var(--color-primary);
     color: var(--color-white);
     text-decoration: none;
-    border-radius: 0;
+    border-radius: 10px;
     border: none;
-    border-top-right-radius: 10px;
     font-weight: bold;
     font-size: 1.1rem;
     transition: background-color 0.3s ease;
@@ -1065,17 +1127,36 @@ input[type="submit"] {
 
     /* About adjustments */
     .about-section {
-        padding: 40px 0;
+        padding: 0;
         height: auto;
     }
 
     .about-section::before {
         transform: scale(1);
     }
+    
+    .about-section::after {
+        width: 100%;
+        height: 40%;
+        background-size: cover;
+        background-position: top center;
+    }
 
     .about-content {
-        padding: 30px 20px;
-        margin: 0 20px;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+    
+    .about-content h2 {
+        margin-left: 20px;
+        padding-top: 30px;
+        width: calc(100% - 40px);
+    }
+    
+    .about-content p {
+        margin-left: 20px;
+        margin-right: 20px;
         width: calc(100% - 40px);
     }
 
@@ -1356,7 +1437,7 @@ input[type="submit"] {
     }
 
     .contact-form input[type="submit"] {
-        width: 160px;
+        width: 100%;
         font-size: 0.9rem;
     }
 }
@@ -1450,7 +1531,7 @@ input[type="submit"] {
     }
 
     .contact-form input[type="submit"] {
-        width: 150px;
+        width: 100%;
         font-size: 0.9rem;
     }
 }
@@ -1756,7 +1837,7 @@ input[type="submit"] {
     }
     
     .contact-form input[type="submit"] {
-        width: 180px;
+        width: 100%;
         height: 45px;
         font-size: 1rem;
     }
@@ -1876,7 +1957,7 @@ input[type="submit"] {
     }
 
     .contact-form input[type="submit"] {
-        width: 160px;
+        width: 100%;
         font-size: 0.9rem;
     }
 }
@@ -1970,7 +2051,24 @@ input[type="submit"] {
     }
 
     .contact-form input[type="submit"] {
-        width: 150px;
+        width: 100%;
         font-size: 0.9rem;
+    }
+} 
+
+@media (max-width: 1024px) and (min-width: 769px) {
+    .about-section::after {
+        width: 60%;
+        height: 50%;
+    }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+    .about-section::after {
+        width: 100%;
+        height: 40%;
+        background-size: cover;
+        background-position: top center;
     }
 } 
