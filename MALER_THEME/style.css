@@ -214,11 +214,12 @@ input[type="submit"] {
 .footer-content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
+    gap: 20px;
     padding: 0 40px;
     width: 100%;
     max-width: var(--section-width);
     margin: 0 auto;
+    justify-content: flex-start;
 }
 
 .footer-logo-container {
@@ -227,8 +228,8 @@ input[type="submit"] {
 }
 
 .footer-logo {
-    width: 90px;
-    height: 89px;
+    width: 135px;
+    height: 133px;
     margin-left: 20px;
     padding: 10px 0;
 }
@@ -252,10 +253,12 @@ input[type="submit"] {
 
 .footer-address {
     padding: 10px 0;
+    margin-left: -20px;
 }
 
 .footer-legal {
     padding: 10px 0;
+    margin-left: -40px;
 }
 
 .footer-legal ul {
@@ -1115,7 +1118,7 @@ input[type="submit"] {
     .footer-content {
         grid-template-columns: 1fr;
         padding: 0 20px;
-        gap: 30px;
+        gap: 20px;
     }
     
     .footer-logo-container {
@@ -1128,8 +1131,8 @@ input[type="submit"] {
     .footer-logo {
         margin: 0 auto;
         padding: 0;
-        width: 80px;
-        height: 79px;
+        width: 120px;
+        height: 118px;
     }
     
     .copyright-text {
@@ -1137,15 +1140,11 @@ input[type="submit"] {
         margin-top: 15px;
     }
     
-    .copyright-text p {
-        font-size: 12px;
-        text-align: center;
-    }
-
     .footer-address, 
     .footer-legal {
         text-align: center;
         padding: 0;
+        margin-left: 0;
     }
     
     .footer-legal ul {
@@ -1271,8 +1270,8 @@ input[type="submit"] {
     }
 
     .footer-logo {
-        width: 70px;
-        height: 69px;
+        width: 105px;
+        height: 103px;
     }
     
     .footer-content {
@@ -1345,8 +1344,8 @@ input[type="submit"] {
     }
 
     .footer-logo {
-        width: 60px;
-        height: 59px;
+        width: 90px;
+        height: 89px;
     }
     
     .footer-content {
@@ -1739,4 +1738,16 @@ input[type="submit"] {
     .footer-legal ul {
         gap: 15px;
     }
+}
+
+.footer-address, 
+.footer-legal {
+    text-align: center;
+    padding: 0;
+    margin-left: 0;
+}
+
+.copyright-text p {
+    font-size: 12px;
+    text-align: center;
 } 
