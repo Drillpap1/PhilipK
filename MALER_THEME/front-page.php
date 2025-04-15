@@ -18,9 +18,14 @@ get_header();
                 <p>von ihrem Malermeister aus Bornheim</p>
                 <a href="#kontakt" class="cta-button">Projekt starten</a>
             </div>
+            <div class="hero-apartment-image">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/Appartment.png" alt="Apartment">
+            </div>
         </div>
         <!-- Rechte Hälfte mit Bild -->
-        <div class="hero-image"></div>
+        <div class="hero-image">
+            <a href="#kontakt" class="termin-button">Termin vereinbaren</a>
+        </div>
     </section>
 
     <!-- About Section -->
