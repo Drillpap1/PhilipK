@@ -930,42 +930,40 @@ input[type="submit"] {
     background: #FFFFFF;
     border: 1px solid #000000;
     border-radius: 0;
+    border-top-right-radius: 10px;
     padding: 32px;
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 16px;
+    position: relative;
 }
 
-.review-header {
+.review-top {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     width: 100%;
-    margin-bottom: 8px;
+    margin-bottom: 16px;
 }
 
 .reviewer-image {
-    width: 48px;
-    height: 48px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
-    overflow: hidden;
+    object-fit: cover;
 }
 
-.reviewer-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.google-logo {
+    width: 40px;
+    height: auto;
 }
 
 .google-badge {
     width: 20px;
     height: 20px;
-}
-
-.google-badge img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+    background-image: url('https://www.gstatic.com/images/branding/product/2x/google_48dp.png');
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .review-content {
@@ -974,24 +972,34 @@ input[type="submit"] {
     font-size: 14px;
     line-height: 1.5;
     color: var(--color-text);
-    margin-bottom: 16px;
+    font-style: italic;
+    margin: 0;
 }
 
-.reviewer-info {
-    font-style: italic;
-    color: #666666;
+.reviewer-name {
+    font-weight: bold;
+    color: var(--color-text);
     font-size: 14px;
-    line-height: 1.4;
+    margin-top: 16px;
 }
 
 .review-rating {
-    display: flex;
-    gap: 4px;
+    color: #FFA41C;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 10px;
 }
 
 .review-rating .star {
     color: #FFA41C;
     font-size: 16px;
+}
+
+/* Entferne alle Zeitangaben */
+.review-date,
+.review-time,
+.review-timestamp {
+    display: none !important;
 }
 
 @media (max-width: 1200px) {

@@ -108,85 +108,61 @@ get_header();
                 <!-- Review Card 1 -->
                 <div class="review-card">
                     <div class="review-header">
-                        <div class="reviewer-image">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/reviewer1.jpg" alt="Reviewer 1">
-                        </div>
                         <div class="reviewer-info">
-                            <div class="reviewer-name">Max Mustermann</div>
-                            <div class="review-date">vor 2 Wochen</div>
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/profilbild1.jpg" alt="Familie Berger" class="reviewer-image">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Google_2015_logo.svg" alt="Google Logo" class="google-logo">
                         </div>
                     </div>
-                    <div class="review-rating">★★★★★</div>
                     <div class="review-content">
-                        "Hervorragende Arbeit! Sehr professionell und sauber gearbeitet. Termine wurden eingehalten und das Ergebnis ist perfekt."
+                        „Absolut empfehlenswert! Herr Krzywinski hat unser Wohnzimmer nicht nur gestrichen, sondern mit einer tollen Wandgestaltung in Szene gesetzt. Alles verlief sauber, pünktlich und mit viel Liebe zum Detail. So stellt man sich Handwerk heute vor!“
                     </div>
-                    <div class="google-badge">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/google-icon.svg" alt="Google">
-                        <span>Google Review</span>
-                    </div>
+                    <div class="reviewer-name">Familie Berger, Bornheim</div>
+                    <div class="review-rating">★★★★★</div>
                 </div>
 
                 <!-- Review Card 2 -->
                 <div class="review-card">
                     <div class="review-header">
-                        <div class="reviewer-image">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/reviewer2.jpg" alt="Reviewer 2">
-                        </div>
                         <div class="reviewer-info">
-                            <div class="reviewer-name">Anna Schmidt</div>
-                            <div class="review-date">vor 1 Monat</div>
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/profilbild2.jpg" alt="Inhaber Werbeagentur Lumen GmbH" class="reviewer-image">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Google_2015_logo.svg" alt="Google Logo" class="google-logo">
                         </div>
                     </div>
-                    <div class="review-rating">★★★★★</div>
                     <div class="review-content">
-                        "Sehr zufrieden mit der Fassadenrenovierung. Faire Preise und top Beratung. Gerne wieder!"
+                        „Wir haben unsere komplette Bürofläche von Herrn Krzywinski und seinem Team renovieren lassen – von der Farbberatung bis zur Ausführung alles top! Besonders beeindruckt hat uns die schnelle Umsetzung bei gleichbleibend hoher Qualität.“
                     </div>
-                    <div class="google-badge">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/google-icon.svg" alt="Google">
-                        <span>Google Review</span>
-                    </div>
+                    <div class="reviewer-name">Inhaber Werbeagentur Lumen GmbH</div>
+                    <div class="review-rating">★★★★★</div>
                 </div>
 
                 <!-- Review Card 3 -->
                 <div class="review-card">
                     <div class="review-header">
-                        <div class="reviewer-image">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/reviewer3.jpg" alt="Reviewer 3">
-                        </div>
                         <div class="reviewer-info">
-                            <div class="reviewer-name">Peter Weber</div>
-                            <div class="review-date">vor 2 Monaten</div>
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/profilbild3.jpg" alt="Sabine K." class="reviewer-image">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Google_2015_logo.svg" alt="Google Logo" class="google-logo">
                         </div>
                     </div>
-                    <div class="review-rating">★★★★★</div>
                     <div class="review-content">
-                        "Kompetente Beratung und erstklassige Ausführung. Das Team war pünktlich und sehr freundlich."
+                        „Ich bin begeistert vom Ergebnis! Die Fassade meines Hauses sieht aus wie neu. Herr Krzywinski hat nicht nur sauber gearbeitet, sondern uns auch super beraten, welche Farben am besten zur Umgebung passen.“
                     </div>
-                    <div class="google-badge">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/google-icon.svg" alt="Google">
-                        <span>Google Review</span>
-                    </div>
+                    <div class="reviewer-name">Sabine K., Wesseling</div>
+                    <div class="review-rating">★★★★★</div>
                 </div>
 
                 <!-- Review Card 4 -->
                 <div class="review-card">
                     <div class="review-header">
-                        <div class="reviewer-image">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/reviewer4.jpg" alt="Reviewer 4">
-                        </div>
                         <div class="reviewer-info">
-                            <div class="reviewer-name">Lisa Meyer</div>
-                            <div class="review-date">vor 3 Monaten</div>
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/profilbild4.jpg" alt="Tamina R." class="reviewer-image">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Google_2015_logo.svg" alt="Google Logo" class="google-logo">
                         </div>
                     </div>
-                    <div class="review-rating">★★★★★</div>
                     <div class="review-content">
-                        "Absolute Empfehlung! Die Qualität der Arbeit ist erstklassig und das Preis-Leistungs-Verhältnis stimmt."
+                        „Sehr freundlich, zuverlässig und extrem professionell. Ich habe Herrn Krzywinski für Lackierarbeiten an Türen und Zargen beauftragt – sieht alles aus wie frisch vom Werk. Preis-Leistung stimmt absolut!“
                     </div>
-                    <div class="google-badge">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/google-icon.svg" alt="Google">
-                        <span>Google Review</span>
-                    </div>
+                    <div class="reviewer-name">Tamina R., Brühl</div>
+                    <div class="review-rating">★★★★★</div>
                 </div>
             </div>
         </div>
