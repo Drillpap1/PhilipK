@@ -1,0 +1,114 @@
+/**
+ * Base Styles
+ * Variablen, Reset, Typographie und allgemeine Stile
+ */
+
+/*------------------------------------*\
+  #IMPORTS
+\*------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/*------------------------------------*\
+  #VARIABLEN
+\*------------------------------------*/
+:root {
+    /* Colors */
+    --color-primary: #2A5154;
+    --color-primary-dark: #1d3c3f;
+    --color-hero-bg: #ADA191;
+    --color-footer-bg: #D9D9D9;
+    --color-text: #333333;
+    --color-white: #ffffff;
+    --color-service-yellow: #EFAF01;
+    
+    /* Dimensions */
+    --header-height: 80px;
+    --section-width: 1440px;
+    --hero-height: 800px;
+    --about-height: 800px;
+    --services-height: 400px;
+    --contact-height: 800px;
+    --footer-height: 240px;
+    --painter-section-height: 800px;
+
+    /* Typography */
+    --font-primary: 'Inter', sans-serif;
+    
+    /* Spacing */
+    --spacing-xs: 10px;
+    --spacing-sm: 20px;
+    --spacing-md: 40px;
+    --spacing-lg: 60px;
+}
+
+/*------------------------------------*\
+  #RESET & BASIS
+\*------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+    position: relative;
+}
+
+body {
+    font-family: var(--font-primary);
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--color-text);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Typografie Basis */
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-primary);
+    font-weight: 700;
+}
+
+p, span, li, a, input, textarea, button {
+    font-family: var(--font-primary);
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*------------------------------------*\
+  #LAYOUT & CONTAINER
+\*------------------------------------*/
+.container {
+    width: 100%;
+    max-width: var(--section-width);
+    margin: 0 auto;
+    padding: 0;
+}
+
+.section-full-width {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    display: flex;
+    align-items: center;
+}
+
+/*------------------------------------*\
+  #UTILITY CLASSES
+\*------------------------------------*/
+.mobile-only {
+    display: none;
+} 
