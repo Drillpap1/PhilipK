@@ -615,17 +615,24 @@ input[type="submit"] {
     background-color: var(--color-footer-bg);
     display: flex;
     align-items: center;
+    padding: 40px 0;
 }
 
 .footer-content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
+    padding: 0 40px;
+    width: 100%;
+    max-width: var(--section-width);
+    margin: 0 auto;
 }
 
 .footer-logo {
     width: 90px;
     height: 89px;
+    margin-left: 20px;
+    padding: 10px 0;
 }
 
 .footer-logo img {
@@ -634,8 +641,22 @@ input[type="submit"] {
     object-fit: contain;
 }
 
+.footer-address {
+    padding: 10px 0;
+}
+
+.footer-legal {
+    padding: 10px 0;
+}
+
 .footer-legal ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-legal li {
+    margin-bottom: 10px;
 }
 
 /*------------------------------------*\
@@ -1074,33 +1095,42 @@ input[type="submit"] {
     /* Footer adjustments */
     .site-footer {
         height: auto;
-        padding: 30px 0;
+        padding: 40px 0;
     }
     
     .footer-content {
         grid-template-columns: 1fr;
         padding: 0 20px;
-        gap: 25px;
+        gap: 30px;
     }
     
     .footer-logo {
         margin: 0 auto;
+        padding: 0;
+        width: 80px;
+        height: 79px;
     }
     
     .footer-address, 
     .footer-legal {
         text-align: center;
+        padding: 0;
     }
     
     .footer-legal ul {
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
         gap: 20px;
     }
     
+    .footer-legal li {
+        margin-bottom: 0;
+    }
+    
     .site-info {
         text-align: center;
-        margin-top: 25px;
+        margin-top: 30px;
     }
 
     /* Utility classes */
@@ -1129,21 +1159,19 @@ input[type="submit"] {
         height: 97px;
         top: 0;
         left: 0;
-    }
-
-    .custom-logo {
-        max-height: 50px;
+        z-index: 101;
     }
 
     .header-contact {
         width: 70px;
+        right: 0;
     }
 
     .contact-icon {
         width: 20px;
         height: 20px;
     }
-    
+
     .menu-toggle {
         right: 85px;
         margin-left: 0;
@@ -1211,6 +1239,19 @@ input[type="submit"] {
     .about-content p {
         font-size: clamp(0.9rem, 4vw, 1rem);
     }
+
+    .footer-logo {
+        width: 70px;
+        height: 69px;
+    }
+    
+    .footer-content {
+        gap: 25px;
+    }
+    
+    .footer-legal ul {
+        gap: 15px;
+    }
 }
 
 @media (max-width: 360px) {
@@ -1271,6 +1312,20 @@ input[type="submit"] {
     .cta-button {
         width: 150px;
         font-size: 0.9rem;
+    }
+
+    .footer-logo {
+        width: 60px;
+        height: 59px;
+    }
+    
+    .footer-content {
+        padding: 0 15px;
+        gap: 20px;
+    }
+    
+    .footer-legal ul {
+        gap: 10px;
     }
 }
 
@@ -1556,17 +1611,101 @@ input[type="submit"] {
 
 @media (max-width: 480px) {
     .custom-logo-link {
-        width: 150px;
-        height: 81px;
+        width: 180px;
+        height: 97px;
         top: 0;
+        left: 0;
         z-index: 101;
     }
 
     .header-contact {
+        width: 70px;
         right: 0;
+    }
+
+    .contact-icon {
+        width: 20px;
+        height: 20px;
     }
 
     .menu-toggle {
         right: 85px;
+        margin-left: 0;
+    }
+    
+    .hero-text h1 {
+        font-size: clamp(32px, 7vw, 36px);
+    }
+    
+    .hero-text p {
+        font-size: clamp(16px, 3.5vw, 20px);
+    }
+    
+    .cta-button {
+        width: 160px;
+        font-size: 1rem;
+        height: 40px;
+    }
+    
+    .review-card {
+        padding: 15px;
+    }
+    
+    .reviewer-image {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .google-logo {
+        width: 60px;
+    }
+    
+    .review-content {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+    
+    .service-item {
+        padding: 30px 15px;
+    }
+    
+    .service-title {
+        font-size: clamp(1.2rem, 5vw, 1.5rem);
+    }
+    
+    .service-item p {
+        font-size: clamp(0.9rem, 4vw, 1rem);
+    }
+    
+    .painter-content h2 {
+        font-size: clamp(1.5rem, 5vw, 1.8rem);
+        margin-bottom: 15px;
+    }
+    
+    .painter-content p {
+        font-size: clamp(0.9rem, 4vw, 1rem);
+        margin-bottom: 15px;
+    }
+    
+    .about-content h2 {
+        font-size: clamp(1.5rem, 5vw, 1.8rem);
+        margin-bottom: 15px;
+    }
+    
+    .about-content p {
+        font-size: clamp(0.9rem, 4vw, 1rem);
+    }
+
+    .footer-logo {
+        width: 70px;
+        height: 69px;
+    }
+    
+    .footer-content {
+        gap: 25px;
+    }
+    
+    .footer-legal ul {
+        gap: 15px;
     }
 } 
