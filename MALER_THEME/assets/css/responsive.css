@@ -1,6 +1,7 @@
 /**
  * Responsive Styles
  * Breakpoint-spezifische Stile für eine responsive Website
+ * Mit optimiertem Header für alle Geräte
  */
 
 /*------------------------------------*\
@@ -10,13 +11,39 @@
 /* Tablets und kleine Desktops (bis 1200px) */
 @media (max-width: 1200px) {
     /* Header & Navigation */
+    .site-header {
+        position: relative;
+    }
+    
+    .site-header .container {
+        padding: 0 20px;
+    }
+    
+    .custom-logo-link {
+        width: 300px;
+        height: auto;
+        max-height: calc(var(--header-height) - 10px);
+        padding: 5px 0;
+    }
+    
+    .custom-logo {
+        max-height: 60px;
+        width: auto;
+    }
+    
     .menu-toggle {
         display: block;
-        right: 120px;
+        right: 150px;
+        top: 50%;
+        transform: translateY(-50%);
     }
     
     .nav-menu {
         display: none;
+    }
+    
+    .header-contact {
+        width: 100px;
     }
     
     /* Sections */
@@ -45,6 +72,31 @@
         width: 90%;
         margin-bottom: 20px;
     }
+    
+    /* Buttons */
+    .cta-button {
+        width: 200px;
+        font-size: 1.1rem;
+    }
+    
+    .termin-button {
+        width: 170px;
+        height: 110px;
+        font-size: 1.1rem;
+    }
+    
+    .contact-form input[type="submit"] {
+        width: 180px;
+    }
+    
+    /* Mobile Menu Verbesserungen */
+    .mobile-menu-overlay {
+        padding-top: 80px;
+    }
+    
+    .close-menu {
+        top: 15px;
+    }
 }
 
 /* Größere Mobilgeräte (bis 768px) */
@@ -54,12 +106,31 @@
         height: 70px;
     }
     
-    .site-branding img {
-        height: 40px;
+    .site-header .container {
+        padding: 0 15px;
+    }
+    
+    .custom-logo-link {
+        width: 220px;
+        max-height: 60px;
+    }
+    
+    .custom-logo {
+        max-height: 50px;
     }
     
     .menu-toggle {
-        right: 20px;
+        right: 110px;
+        padding: 10px;
+    }
+    
+    .header-contact {
+        width: 80px;
+    }
+    
+    .header-contact .contact-icon {
+        width: 24px;
+        height: 24px;
     }
     
     /* Sections */
@@ -91,11 +162,34 @@
         width: 100%;
     }
     
+    /* Buttons */
+    .cta-button {
+        width: 180px;
+        font-size: 1rem;
+        padding: 12px 20px;
+    }
+    
     .termin-button {
         width: 150px;
         height: 100px;
         font-size: 1rem;
         padding: 15px;
+    }
+    
+    .contact-form input[type="submit"] {
+        width: 160px;
+        font-size: 1rem;
+        padding: 10px;
+    }
+    
+    /* Mobile Menu Anpassungen */
+    .mobile-menu-overlay {
+        padding-top: 60px;
+    }
+    
+    .mobile-menu a {
+        font-size: 20px;
+        padding: 10px 0;
     }
 }
 
@@ -106,8 +200,36 @@
         height: 60px;
     }
     
-    .site-branding img {
-        height: 30px;
+    .site-header .container {
+        padding: 0 10px;
+    }
+    
+    .custom-logo-link {
+        width: 180px;
+        max-height: 50px;
+    }
+    
+    .custom-logo {
+        max-height: 40px;
+    }
+    
+    .menu-toggle {
+        right: 70px;
+        padding: 8px;
+    }
+    
+    .burger-line {
+        width: 20px;
+        margin: 4px 0;
+    }
+    
+    .header-contact {
+        width: 60px;
+    }
+    
+    .header-contact .contact-icon {
+        width: 20px;
+        height: 20px;
     }
     
     /* Sections */
@@ -119,9 +241,11 @@
         font-size: 1.8rem;
     }
     
+    /* Buttons */
     .cta-button {
-        width: 180px;
-        font-size: 1rem;
+        width: 160px;
+        font-size: 0.9rem;
+        padding: 10px 15px;
     }
     
     .termin-button {
@@ -129,6 +253,12 @@
         height: 90px;
         font-size: 0.9rem;
         padding: 10px;
+    }
+    
+    .contact-form input[type="submit"] {
+        width: 140px;
+        font-size: 0.9rem;
+        padding: 8px;
     }
     
     .footer-content {
@@ -139,5 +269,24 @@
     .footer-logo, .footer-links, .footer-contact {
         width: 100%;
         margin-bottom: 20px;
+    }
+    
+    /* Mobile Menu Anpassungen */
+    .mobile-menu-overlay {
+        padding-top: 50px;
+    }
+    
+    .close-menu {
+        top: 10px;
+        right: 10px;
+    }
+    
+    .close-line {
+        width: 20px;
+    }
+    
+    .mobile-menu a {
+        font-size: 18px;
+        padding: 8px 0;
     }
 } 
