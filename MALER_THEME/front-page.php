@@ -101,20 +101,17 @@ get_header();
     <!-- Google Reviews Section -->
     <section class="google-reviews-section">
         <div class="google-reviews-container">
-            <div class="google-reviews-header">
-                <h2>Das sagen unsere Kunden</h2>
-            </div>
             <div class="google-reviews-grid">
                 <!-- Review Card 1 -->
                 <div class="review-card">
                     <div class="review-header">
                         <div class="reviewer-info">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/profilbild1.jpg" alt="Familie Berger" class="reviewer-image">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Google_2015_logo.svg" alt="Google Logo" class="google-logo">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/google_logo.png" alt="Google Logo" class="google-logo">
                         </div>
                     </div>
                     <div class="review-content">
-                        „Absolut empfehlenswert! Herr Krzywinski hat unser Wohnzimmer nicht nur gestrichen, sondern mit einer tollen Wandgestaltung in Szene gesetzt. Alles verlief sauber, pünktlich und mit viel Liebe zum Detail. So stellt man sich Handwerk heute vor!“
+                        „Absolut empfehlenswert! Herr Krzywinski hat unser Wohnzimmer nicht nur gestrichen, sondern mit einer tollen Wandgestaltung in Szene gesetzt. Alles verlief sauber, pünktlich und mit viel Liebe zum Detail. So stellt man sich Handwerk heute vor!"
                     </div>
                     <div class="reviewer-name">Familie Berger, Bornheim</div>
                     <div class="review-rating">★★★★★</div>
@@ -125,11 +122,11 @@ get_header();
                     <div class="review-header">
                         <div class="reviewer-info">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/profilbild2.jpg" alt="Inhaber Werbeagentur Lumen GmbH" class="reviewer-image">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Google_2015_logo.svg" alt="Google Logo" class="google-logo">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/google_logo.png" alt="Google Logo" class="google-logo">
                         </div>
                     </div>
                     <div class="review-content">
-                        „Wir haben unsere komplette Bürofläche von Herrn Krzywinski und seinem Team renovieren lassen – von der Farbberatung bis zur Ausführung alles top! Besonders beeindruckt hat uns die schnelle Umsetzung bei gleichbleibend hoher Qualität.“
+                        „Wir haben unsere komplette Bürofläche von Herrn Krzywinski und seinem Team renovieren lassen – von der Farbberatung bis zur Ausführung alles top! Besonders beeindruckt hat uns die schnelle Umsetzung bei gleichbleibend hoher Qualität."
                     </div>
                     <div class="reviewer-name">Inhaber Werbeagentur Lumen GmbH</div>
                     <div class="review-rating">★★★★★</div>
@@ -140,11 +137,11 @@ get_header();
                     <div class="review-header">
                         <div class="reviewer-info">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/profilbild3.jpg" alt="Sabine K." class="reviewer-image">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Google_2015_logo.svg" alt="Google Logo" class="google-logo">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/google_logo.png" alt="Google Logo" class="google-logo">
                         </div>
                     </div>
                     <div class="review-content">
-                        „Ich bin begeistert vom Ergebnis! Die Fassade meines Hauses sieht aus wie neu. Herr Krzywinski hat nicht nur sauber gearbeitet, sondern uns auch super beraten, welche Farben am besten zur Umgebung passen.“
+                        „Ich bin begeistert vom Ergebnis! Die Fassade meines Hauses sieht aus wie neu. Herr Krzywinski hat nicht nur sauber gearbeitet, sondern uns auch super beraten, welche Farben am besten zur Umgebung passen."
                     </div>
                     <div class="reviewer-name">Sabine K., Wesseling</div>
                     <div class="review-rating">★★★★★</div>
@@ -155,11 +152,11 @@ get_header();
                     <div class="review-header">
                         <div class="reviewer-info">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/profilbild4.jpg" alt="Tamina R." class="reviewer-image">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Google_2015_logo.svg" alt="Google Logo" class="google-logo">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/google_logo.png" alt="Google Logo" class="google-logo">
                         </div>
                     </div>
                     <div class="review-content">
-                        „Sehr freundlich, zuverlässig und extrem professionell. Ich habe Herrn Krzywinski für Lackierarbeiten an Türen und Zargen beauftragt – sieht alles aus wie frisch vom Werk. Preis-Leistung stimmt absolut!“
+                        „Sehr freundlich, zuverlässig und extrem professionell. Ich habe Herrn Krzywinski für Lackierarbeiten an Türen und Zargen beauftragt – sieht alles aus wie frisch vom Werk. Preis-Leistung stimmt absolut!"
                     </div>
                     <div class="reviewer-name">Tamina R., Brühl</div>
                     <div class="review-rating">★★★★★</div>
