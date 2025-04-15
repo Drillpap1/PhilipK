@@ -42,9 +42,9 @@
                 <p>
                     <?php
                     printf(
-                        /* translators: %1$s: Aktuelles Jahr, %2$s: Site-Name */
+                        /* translators: %1$s: Jahr, %2$s: Site-Name */
                         esc_html__('© %1$s %2$s', 'maler-theme'),
-                        date('Y'),
+                        '2025',
                         'Malermeister Philip Krzywinski'
                     );
                     ?>
