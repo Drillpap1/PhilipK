@@ -1660,6 +1660,14 @@ a {
     z-index: 12;
 }
 
+/* Zeige das Burger-Menü explizit für mobile Geräte */
+@media (max-width: 1200px) {
+    .menu-toggle {
+        display: block;
+        right: 120px;
+    }
+}
+
 .burger-line {
     display: block;
     width: 25px;
@@ -1750,5 +1758,4 @@ a {
 
 .mobile-menu a:hover {
     opacity: 0.8;
-} 
 } 
