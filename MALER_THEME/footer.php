@@ -36,20 +36,20 @@
                     </ul>
                 </div>
             </div>
-
-            <!-- Copyright-Information -->
-            <div class="site-info">
-                <p>
-                    <?php
-                    printf(
-                        /* translators: %1$s: Jahr, %2$s: Site-Name */
-                        esc_html__('© %1$s %2$s', 'maler-theme'),
-                        '2025',
-                        'Malermeister Philip Krzywinski'
-                    );
-                    ?>
-                </p>
-            </div>
+        </div>
+            
+        <!-- Copyright-Information -->
+        <div class="site-info">
+            <p>
+                <?php
+                printf(
+                    /* translators: %1$s: Jahr, %2$s: Site-Name */
+                    esc_html__('© %1$s %2$s', 'maler-theme'),
+                    '2025',
+                    'Malermeister Philip Krzywinski'
+                );
+                ?>
+            </p>
         </div>
     </footer>
 </div><!-- #page -->
