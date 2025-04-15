@@ -1,7 +1,7 @@
 /**
  * Responsive Styles
  * Breakpoint-spezifische Stile für eine responsive Website
- * Mit optimiertem Header für alle Geräte
+ * Mit optimiertem Header und allen Sektionen für Tablet und Mobile
  */
 
 /*------------------------------------*\
@@ -46,15 +46,99 @@
         width: 100px;
     }
     
-    /* Sections */
+    /* Hero Section */
+    .hero-section {
+        height: auto;
+        min-height: 600px;
+        flex-direction: column;
+    }
+    
     .hero-content {
-        width: 90%;
+        width: 100%;
+        height: auto;
+        min-height: 400px;
+    }
+    
+    .hero-text {
+        padding: 60px 40px;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .hero-text h1 {
+        font-size: 60px;
+    }
+    
+    .hero-text p {
+        font-size: 24px;
+    }
+    
+    .hero-image {
+        position: relative;
+        width: 100%;
+        height: 300px;
+    }
+    
+    /* About Section */
+    .about-section {
+        height: auto;
+        min-height: 600px;
+        flex-direction: column;
+        background-position: top center !important;
+    }
+    
+    .about-section::after {
+        width: 100%;
+        height: 30%;
+    }
+    
+    .about-content {
+        width: 100%;
+        padding: 60px 40px;
+    }
+    
+    .about-content h2 {
+        margin-left: 0;
+        width: 100%;
+        font-size: 60px;
+        white-space: normal;
+    }
+    
+    .about-content p {
+        margin-left: 0;
+        width: 80%;
+    }
+    
+    /* Services Section */
+    .services-section {
+        height: auto;
     }
     
     .services-grid {
         grid-template-columns: 1fr 1fr;
     }
     
+    .service-item {
+        padding: 40px 30px;
+        min-height: 300px;
+    }
+    
+    /* Painter Section */
+    .painter-section {
+        height: auto;
+        padding: 60px 0;
+    }
+    
+    .painter-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .painter-image, .painter-content {
+        width: 48%;
+    }
+    
+    /* Contact Section */
     .contact-content {
         flex-direction: column;
     }
@@ -64,6 +148,7 @@
         margin: 0 auto 30px;
     }
     
+    /* Google Reviews */
     .google-reviews-container {
         flex-direction: column;
     }
@@ -133,7 +218,19 @@
         height: 24px;
     }
     
-    /* Sections */
+    /* Hero Section */
+    .hero-section {
+        min-height: 500px;
+    }
+    
+    .hero-content {
+        min-height: 350px;
+    }
+    
+    .hero-text {
+        padding: 40px 20px;
+    }
+    
     .hero-text h1 {
         font-size: 2.5rem;
     }
@@ -142,24 +239,80 @@
         font-size: 1rem;
     }
     
-    .section-title {
-        font-size: 2rem;
+    .hero-image {
+        height: 200px;
     }
     
+    /* About Section */
+    .about-section {
+        min-height: 500px;
+    }
+    
+    .about-content {
+        padding: 40px 20px;
+    }
+    
+    .about-content h2 {
+        font-size: 2.5rem;
+    }
+    
+    .about-content p {
+        width: 100%;
+        font-size: 1rem;
+    }
+    
+    /* Services Section */
     .services-grid {
         grid-template-columns: 1fr;
     }
     
     .service-item {
-        min-height: 200px;
+        min-height: 250px;
+        padding: 30px 20px;
     }
     
+    .service-title {
+        font-size: 1.5rem;
+    }
+    
+    .service-icon {
+        width: 50px;
+        height: 50px;
+    }
+    
+    /* Painter Section */
     .painter-container {
         flex-direction: column;
     }
     
     .painter-image, .painter-content {
         width: 100%;
+    }
+    
+    .painter-image {
+        height: 300px;
+        margin-bottom: 30px;
+    }
+    
+    .painter-content h2 {
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    /* Contact Section */
+    .contact-section {
+        padding: 40px 0;
+    }
+    
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form textarea {
+        padding: 10px;
+        margin-bottom: 15px;
     }
     
     /* Buttons */
@@ -232,13 +385,122 @@
         height: 20px;
     }
     
-    /* Sections */
+    /* Hero Section */
+    .hero-section {
+        min-height: 400px;
+    }
+    
+    .hero-content {
+        min-height: 300px;
+    }
+    
+    .hero-text {
+        padding: 30px 15px;
+    }
+    
     .hero-text h1 {
         font-size: 2rem;
+        margin-bottom: 10px;
+    }
+    
+    .hero-text p {
+        font-size: 0.9rem;
+        margin-bottom: 20px;
+    }
+    
+    .hero-image {
+        height: 150px;
+    }
+    
+    /* About Section */
+    .about-section {
+        min-height: 400px;
+    }
+    
+    .about-content {
+        padding: 30px 15px;
+    }
+    
+    .about-content h2 {
+        font-size: 1.8rem;
+        padding: 30px 0 0 0;
+    }
+    
+    .about-content p {
+        font-size: 0.9rem;
+        padding-bottom: 30px;
+    }
+    
+    /* Services Section */
+    .service-item {
+        min-height: 200px;
+        padding: 25px 15px;
+    }
+    
+    .service-header {
+        gap: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .service-title {
+        font-size: 1.3rem;
+    }
+    
+    .service-icon {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .service-item p {
+        font-size: 0.9rem;
+    }
+    
+    /* Painter Section */
+    .painter-section {
+        padding: 40px 0;
+    }
+    
+    .painter-image {
+        height: 200px;
+        margin-bottom: 20px;
+    }
+    
+    .painter-content h2 {
+        font-size: 1.8rem;
+    }
+    
+    .painter-content p {
+        font-size: 0.9rem;
     }
     
     .section-title {
         font-size: 1.8rem;
+    }
+    
+    /* Contact Section */
+    .contact-section {
+        padding: 30px 0;
+    }
+    
+    .contact-form label {
+        font-size: 0.9rem;
+    }
+    
+    /* Google Reviews */
+    .google-reviews-section {
+        padding: 30px 0;
+    }
+    
+    .review-card {
+        padding: 15px;
+    }
+    
+    .reviewer-name, .review-rating {
+        font-size: 0.9rem;
+    }
+    
+    .review-content {
+        font-size: 0.85rem;
     }
     
     /* Buttons */
@@ -261,14 +523,33 @@
         padding: 8px;
     }
     
+    /* Footer */
     .footer-content {
         flex-direction: column;
         text-align: center;
+        padding: 30px 15px;
     }
     
     .footer-logo, .footer-links, .footer-contact {
         width: 100%;
         margin-bottom: 20px;
+    }
+    
+    .footer-logo {
+        max-width: 180px;
+        margin: 0 auto 20px;
+    }
+    
+    .copyright-text {
+        font-size: 0.8rem;
+    }
+    
+    .footer-legal li {
+        margin: 0 5px;
+    }
+    
+    .footer-legal a {
+        font-size: 0.8rem;
     }
     
     /* Mobile Menu Anpassungen */
