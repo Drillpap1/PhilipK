@@ -92,7 +92,7 @@ get_header();
         <div class="container">
             <div class="contact-content">
                 <div class="contact-form">
-                    <?php echo do_shortcode('[contact-form-7 id="FORM_ID" title="Kontaktformular"]'); ?>
+                    <?php echo do_shortcode('[contact-form-7 id="6d7cf3c" title="Kontaktformular"]'); ?>
                 </div>
             </div>
         </div>
@@ -113,7 +113,7 @@ get_header();
                     <div class="review-content">
                         „Absolut empfehlenswert! Herr Krzywinski hat unser Wohnzimmer nicht nur gestrichen, sondern mit einer tollen Wandgestaltung in Szene gesetzt. Alles verlief sauber, pünktlich und mit viel Liebe zum Detail. So stellt man sich Handwerk heute vor!"
                     </div>
-                    <div class="reviewer-name">Familie Berger, Bornheim</div>
+                    <div class="reviewer-name">- Familie Berger, Bornheim</div>
                     <div class="review-rating">★★★★★</div>
                 </div>
 
@@ -128,7 +128,7 @@ get_header();
                     <div class="review-content">
                         „Wir haben unsere komplette Bürofläche von Herrn Krzywinski und seinem Team renovieren lassen – von der Farbberatung bis zur Ausführung alles top! Besonders beeindruckt hat uns die schnelle Umsetzung bei gleichbleibend hoher Qualität."
                     </div>
-                    <div class="reviewer-name">Inhaber Werbeagentur Lumen GmbH</div>
+                    <div class="reviewer-name">- Inhaber Werbeagentur Lumen GmbH</div>
                     <div class="review-rating">★★★★★</div>
                 </div>
 
@@ -143,7 +143,7 @@ get_header();
                     <div class="review-content">
                         „Ich bin begeistert vom Ergebnis! Die Fassade meines Hauses sieht aus wie neu. Herr Krzywinski hat nicht nur sauber gearbeitet, sondern uns auch super beraten, welche Farben am besten zur Umgebung passen."
                     </div>
-                    <div class="reviewer-name">Sabine K., Wesseling</div>
+                    <div class="reviewer-name">- Sabine K., Wesseling</div>
                     <div class="review-rating">★★★★★</div>
                 </div>
 
@@ -158,7 +158,7 @@ get_header();
                     <div class="review-content">
                         „Sehr freundlich, zuverlässig und extrem professionell. Ich habe Herrn Krzywinski für Lackierarbeiten an Türen und Zargen beauftragt – sieht alles aus wie frisch vom Werk. Preis-Leistung stimmt absolut!"
                     </div>
-                    <div class="reviewer-name">Tamina R., Brühl</div>
+                    <div class="reviewer-name">- Tamina R., Brühl</div>
                     <div class="review-rating">★★★★★</div>
                 </div>
             </div>
